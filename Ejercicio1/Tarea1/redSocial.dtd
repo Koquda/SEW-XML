@@ -1,0 +1,19 @@
+<!ELEMENT persona (datos, (persona, persona, persona)?, coordenada*, fotografia+)>
+<!ELEMENT redSocial (persona+)>
+<!ELEMENT datos (#PCDATA)>
+<!ELEMENT coordenada (#PCDATA)>
+<!ELEMENT fotografia (#PCDATA)>
+<!ATTLIST datos
+          nombre 			 CDATA 	 #REQUIRED
+          apellidos 		 CDATA 	 #REQUIRED
+          fechaNacimiento 	 NMTOKEN     #REQUIRED
+          lugarNacimiento	 CDATA	 #REQUIRED
+		  residencia		 CDATA	 #REQUIRED
+          comentarios 		 CDATA 	 #REQUIRED>
+<!ATTLIST coordenada
+          tipo      (nacimiento | residencia)	   #REQUIRED
+          longitud 	CDATA                          #REQUIRED
+          latitud 	NMTOKEN                        #REQUIRED
+          altitud 	NMTOKEN                        #REQUIRED>
+<!ATTLIST fotografia 
+		  url CDATA #REQUIRED>
