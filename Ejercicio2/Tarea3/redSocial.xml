@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE redSocial SYSTEM "../Tarea2/redSocial.dtd">
+<redSocial>
+	<persona> 
+			<datos nombre="Alejandro" 
+			 apellidos="Campa Martínez" 
+			 fechaNacimiento="2002-11-04" 
+			 lugarNacimiento="Avilés"  
+			 residencia="Avilés"
+			 comentarios="Este soy yo"></datos>
+			 <coordenada tipo="nacimiento"
+						 longitud="43.55178850537288"
+						 latitud="-5.935726041191507"
+						 altitud="">
+			 </coordenada>
+			 <coordenada tipo="residencia"
+						 longitud="43.5606906693661"
+						 latitud="-5.926943764909175"
+						 altitud="">
+			 </coordenada>
+			 <fotografia url=""></fotografia>
+
+			<persona> 
+				<datos nombre="Pedro" 
+					apellidos="Martínez Gómez"
+					fechaNacimiento="2001-1-04" 
+					lugarNacimiento="Oviedo"  
+					residencia="Oviedo"
+					comentarios="un amigo"></datos>
+				<coordenada tipo="nacimiento"
+							longitud="43.55178850537288"
+							latitud="-5.935726041191507"
+							altitud="">
+				</coordenada>
+				<coordenada tipo="residencia"
+							longitud="43.5606906693661"
+							latitud="-5.926943764909175"
+							altitud="">
+				</coordenada>
+				<fotografia url=""></fotografia>
+
+				<persona> 
+					<datos nombre="Aaron" 
+					apellidos="Orozco" 
+					fechaNacimiento="2002-6-22" 
+					lugarNacimiento="Llanera"  
+					residencia="Oviedo"
+					comentarios="otro amigo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+
+				<persona> 
+					<datos nombre="Fernando" 
+					apellidos="Arias Martínez" 
+					fechaNacimiento="2003-3-12" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="se llama Fernando"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+
+				<persona> 
+					<datos nombre="Román" 
+					apellidos="Alonso Pérez" 
+					fechaNacimiento="1999-12-12" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="juega a fútbol"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+			 
+			</persona>
+
+			<persona> 
+				<datos nombre="Alejandro" 
+				apellidos="Campa Martínez" 
+				fechaNacimiento="2002-11-04" 
+				lugarNacimiento="Avilés"  
+				residencia="Avilés"
+				comentarios="Este soy yo"></datos>
+				<coordenada tipo="nacimiento"
+							longitud="43.55178850537288"
+							latitud="-5.935726041191507"
+							altitud="">
+				</coordenada>
+				<coordenada tipo="residencia"
+							longitud="43.5606906693661"
+							latitud="-5.926943764909175"
+							altitud="">
+				</coordenada>
+				<fotografia url=""></fotografia>
+
+				<persona> 
+					<datos nombre="Alejandro" 
+					apellidos="Campa Martínez" 
+					fechaNacimiento="2002-11-04" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="Este soy yo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+
+				<persona> 
+					<datos nombre="Alejandro" 
+					apellidos="Campa Martínez" 
+					fechaNacimiento="2002-11-04" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="Este soy yo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+
+				<persona> 
+					<datos nombre="Alejandro" 
+					apellidos="Campa Martínez" 
+					fechaNacimiento="2002-11-04" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="Este soy yo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+			 
+			</persona>
+
+			<persona> 
+				<datos nombre="Alejandro" 
+				apellidos="Campa Martínez" 
+				fechaNacimiento="2002-11-04" 
+				lugarNacimiento="Avilés"  
+				residencia="Avilés"
+				comentarios="Este soy yo"></datos>
+				<coordenada tipo="nacimiento"
+							longitud="43.55178850537288"
+							latitud="-5.935726041191507"
+							altitud="">
+				</coordenada>
+				<coordenada tipo="residencia"
+							longitud="43.5606906693661"
+							latitud="-5.926943764909175"
+							altitud="">
+				</coordenada>
+				<fotografia url=""></fotografia>
+
+				<persona> 
+					<datos nombre="Alejandro" 
+					apellidos="Campa Martínez" 
+					fechaNacimiento="2002-11-04" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="Este soy yo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+
+			 
+				</persona>
+
+				<persona> 
+					<datos nombre="Alejandro" 
+					apellidos="Campa Martínez" 
+					fechaNacimiento="2002-11-04" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="Este soy yo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+
+				<persona> 
+					<datos nombre="Alejandro" 
+					apellidos="Campa Martínez" 
+					fechaNacimiento="2002-11-04" 
+					lugarNacimiento="Avilés"  
+					residencia="Avilés"
+					comentarios="Este soy yo"></datos>
+					<coordenada tipo="nacimiento"
+								longitud="43.55178850537288"
+								latitud="-5.935726041191507"
+								altitud="">
+					</coordenada>
+					<coordenada tipo="residencia"
+								longitud="43.5606906693661"
+								latitud="-5.926943764909175"
+								altitud="">
+					</coordenada>
+					<fotografia url=""></fotografia>
+			 
+				</persona>
+			 
+			</persona>
+			 
+	</persona>
+</redSocial>

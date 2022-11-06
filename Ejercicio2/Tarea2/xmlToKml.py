@@ -38,7 +38,7 @@ def getAllPersonas(root, kml_file):
     personaPrincipal = root.find('persona')
     getPersonaRecursivo(personaPrincipal, kml_file)
 
-def createHTML(kml_file):
+def createKML(kml_file):
     kml_file.write('''<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
@@ -57,7 +57,7 @@ def toHtml(xml_file, kml_file):
             tree = ET.parse(xml_file)
         root = tree.getroot()
         kml_file = open(kml_file, 'w')
-        createHTML(kml_file)
+        createKML(kml_file)
         getAllPersonas(root, kml_file)
         closeKML(kml_file)
 
