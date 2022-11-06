@@ -1,13 +1,14 @@
 import xml.etree.ElementTree as ET
 
 
-def addDatosToHTML(child, html_file):
-    nombre = "<li>Nombre: " + child.get('nombre') + "</li>\n"
-    apellidos = "<li>Apellidos: " + child.get('apellidos') + "</li>\n"
-    fechaNacimiento = "<li>Fecha de nacimiento: " + child.get('fechaNacimiento') + "</li>\n"
-    lugarNacimiento = "<li>Lugar de nacimiento: " + child.get('lugarNacimiento') + "</li>\n"
-    residencia = "<li>Residencia: " + child.get('residencia') + "</li>\n"
-    comentarios = "<li>Comentarios: " + child.get('comentarios') + "</li>\n"
+def addDatosToHTML(child, html_file, i):
+    sep = lambda x: x * '\t'
+    nombre = sep(i) + "<p>Nombre: " + child.get('nombre') + "</p>\n"
+    apellidos = sep(i) + "<p>Apellidos: " + child.get('apellidos') + "</p>\n"
+    fechaNacimiento = sep(i) + "<p>Fecha de nacimiento: " + child.get('fechaNacimiento') + "</p>\n"
+    lugarNacimiento = sep(i) + "<p>Lugar de nacimiento: " + child.get('lugarNacimiento') + "</p>\n"
+    residencia = sep(i) + "<p>Residencia: " + child.get('residencia') + "</p>\n"
+    comentarios = sep(i) + "<p>Comentarios: " + child.get('comentarios') + "</p>\n"
     html_file.write(nombre)
     html_file.write(apellidos)
     html_file.write(fechaNacimiento)
@@ -15,36 +16,42 @@ def addDatosToHTML(child, html_file):
     html_file.write(residencia)
     html_file.write(comentarios)
 
-def addCoordenadaToHTML(child, html_file):
-    tipo = "<li>Tipo: " + child.get('tipo') + "</li>\n"
-    latitud = "<li>Latitud: " + child.get('latitud') + "</li>\n"
-    longitud = "<li>Longitud: " + child.get('longitud') + "</li>\n"
-    altitud = "<li>Altitud: " + child.get('altitud') + "</li>\n"
+def addCoordenadaToHTML(child, html_file, i):
+    sep = lambda x: x * '\t'
+    tipo = sep(i) + "<p>Tipo: " + child.get('tipo') + "</p>\n"
+    latitud = sep(i) + "<p>Latitud: " + child.get('latitud') + "</p>\n"
+    longitud = sep(i) + "<p>Longitud: " + child.get('longitud') + "</p>\n"
+    altitud = sep(i) + "<p>Altitud: " + child.get('altitud') + "</p>\n"
     html_file.write(tipo)
     html_file.write(latitud)
     html_file.write(longitud)
     html_file.write(altitud)
 
-def addFotografiaToHTML(child, html_file):
-    url = "<li>URL: " + child.get('url') + "</li>\n"
+def addFotografiaToHTML(child, html_file, i):
+    sep = lambda x: x * '\t'
+    url = sep(i) + "<img src= " + child.get('url') + ' alt="imagen"></img>\n'
     html_file.write(url)
 
 
-def addPersonToHTML(child, html_file):
+def addPersonToHTML(child, html_file, i):
+    html_file.write(i * '\t' + '<li>\n')
     if child.tag == 'datos':
-        addDatosToHTML(child, html_file)
+        addDatosToHTML(child, html_file, i)
     elif child.tag == 'coordenada':
-        addCoordenadaToHTML(child, html_file)
+        addCoordenadaToHTML(child, html_file, i)
     elif child.tag == 'fotografia':
-        addFotografiaToHTML(child, html_file)
+        addFotografiaToHTML(child, html_file, i)
+    html_file.write(i * '\t' + '</li>\n')
 
-def getPersonaRecursivo(persona, html_file):
+def getPersonaRecursivo(persona, html_file, i=0):
     if persona is not None:
         for child in persona:
             if child.tag == 'persona':
-                getPersonaRecursivo(child, html_file)
+                html_file.write(i * '\t' + '<ul>\n')
+                getPersonaRecursivo(child, html_file, i+1)
+                html_file.write(i * '\t' + '</ul>\n')
             else:
-                addPersonToHTML(child, html_file)
+                addPersonToHTML(child, html_file, i)
                 
 
 def getAllPersonas(root, html_file):
