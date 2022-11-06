@@ -21,12 +21,12 @@
 			 <fotografia url=""></fotografia>
 
 			<persona> 
-				<datos nombre="Alejandro" 
-				apellidos="Campa Martínez"
-				fechaNacimiento="2002-11-04" 
-				lugarNacimiento="Avilés"  
-				residencia="Avilés"
-				comentarios="Este soy yo"></datos>
+				<datos nombre="Pedro" 
+					apellidos="Martínez Gómez"
+					fechaNacimiento="2001-1-04" 
+					lugarNacimiento="Oviedo"  
+					residencia="Oviedo"
+					comentarios="un amigo"></datos>
 				<coordenada tipo="nacimiento"
 							longitud="43.55178850537288"
 							latitud="-5.935726041191507"
@@ -40,12 +40,12 @@
 				<fotografia url=""></fotografia>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					<datos nombre="Aaron" 
+					apellidos="Orozco" 
+					fechaNacimiento="2002-6-22" 
+					lugarNacimiento="Llanera"  
+					residencia="Oviedo"
+					comentarios="otro amigo"></datos>
 					<coordenada tipo="nacimiento"
 								longitud="43.55178850537288"
 								latitud="-5.935726041191507"
@@ -61,12 +61,12 @@
 				</persona>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
+					<datos nombre="Fernando" 
+					apellidos="Arias Martínez" 
+					fechaNacimiento="2003-3-12" 
 					lugarNacimiento="Avilés"  
 					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					comentarios="se llama Fernando"></datos>
 					<coordenada tipo="nacimiento"
 								longitud="43.55178850537288"
 								latitud="-5.935726041191507"
@@ -82,12 +82,12 @@
 				</persona>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
+					<datos nombre="Román" 
+					apellidos="Alonso Pérez" 
+					fechaNacimiento="1999-12-12" 
 					lugarNacimiento="Avilés"  
 					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					comentarios="juega a fútbol"></datos>
 					<coordenada tipo="nacimiento"
 								longitud="43.55178850537288"
 								latitud="-5.935726041191507"
