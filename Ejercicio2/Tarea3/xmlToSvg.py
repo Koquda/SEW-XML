@@ -12,8 +12,8 @@ FONT_SIZE = 20
 
 text = lambda x,y,z,a: '\n\t\t<text x="%d" y="%d" %s> %s </text>' % (x,y,z,a)
 
-def addLinea(self, x1, y1, x2, y2, aux=''):
-        aux += '\n\t<line x1="%d" y1="%d" x2="%d" y2="%d" />' % (x1, y1, x2, y2-self.FONT_SIZE)
+def addLinea(x1, y1, x2, y2, aux=''):
+        aux += '\n\t<line x1="%d" y1="%d" x2="%d" y2="%d" />' % (x1, y1, x2, y2-FONT_SIZE)
         return aux
 
 def addDatosToSVG(child, svg_file, x, y):
@@ -59,8 +59,8 @@ def getPersonaRecursivo(persona, svg_file, x, y, i=1):
         getPersonaRecursivo(persona.findall('persona')[0], svg_file, x-HEIGHT/(3**i), yNueva, i+1)
         getPersonaRecursivo(persona.findall('persona')[1], svg_file, x, yNueva, i+1)
         getPersonaRecursivo(persona.findall('persona')[2], svg_file, x+HEIGHT/(3**i), yNueva, i+1)
-    else:
-        addPersonToSVG(persona, svg_file, x, y)
+    addPersonToSVG(persona, svg_file, x, y)
+    
                 
 
 def getAllPersonas(root, svg_file):
