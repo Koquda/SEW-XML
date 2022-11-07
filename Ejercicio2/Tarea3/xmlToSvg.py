@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 
 # Usar la funcion de crear la línea
+# Que las corrdenadas muestren menos decimales
 
 WIDTH = 2400
 HEIGHT = 2400
