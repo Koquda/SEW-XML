@@ -67,8 +67,7 @@ def createHTML(html_file):
                         <meta name="description" content="Ejemplo de la red social convertida a HTML desde un XML." />
                         <meta name="keywords" content="html,xml" />
                         <meta name="viewport" content ="width=device-width, initial scale=1.0" />
-                        <title> Red Social por Alejandro Campa</title>
-                        <base href="media/" />
+                        <title> Red Social por Alejandro Campa</title> 
                         <link rel="stylesheet" type="text/css" href="../estilos.css" />
                     </head>
                     <body>
@@ -82,7 +81,7 @@ def closeHTML(html_file):
 
 def toHtml(xml_file, html_file):
     try:
-        with open(xml_file, 'rb') as xml_file:
+        with open(xml_file, 'rb', encoding='utf-7') as xml_file:
             tree = ET.parse(xml_file)
         root = tree.getroot()
         html_file = open('redSocial.html', 'w')
