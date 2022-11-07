@@ -1,7 +1,5 @@
 import xml.etree.ElementTree as ET
 
-# Problemas: no hace bien la recursividad
-# Corregir el problema de solapamiento de las coordenadas
 # Usar la funcion de crear la línea
 
 WIDTH = 2400
@@ -9,6 +7,8 @@ HEIGHT = 2400
 Y_INC = 400
 
 FONT_SIZE = 20
+
+
 
 text = lambda x,y,z,a: '\n\t\t<text x="%d" y="%d" %s> %s </text>' % (x,y,z,a)
 
@@ -30,43 +30,51 @@ def addDatosToSVG(child, svg_file, x, y):
     svg_file.write(residencia)
     svg_file.write(comentarios)
 
-def addCoordenadaToSVG(child, svg_file, x, y):
+def addCoordenadaToSVG(child, svg_file, x, y, iteration):
     y_calc = lambda x: y + x * FONT_SIZE + 1
-    coordenadaTipo = text(x,y_calc(6),'font-weight="bold"',(child.get('tipo')))
-    coordenadaValores = text(x,y_calc(7),'', (child.get('latitud') + " / " + child.get('longitud') + " / " + child.get('altitud')))
+    if iteration % 2 == 0:
+        coordenadaTipo = text(x,y_calc(6),'font-weight="bold"',(child.get('tipo')))
+        coordenadaValores = text(x,y_calc(7),'', (child.get('latitud') + " / " + child.get('longitud') + " / " + child.get('altitud')))
+    else:
+        coordenadaTipo = text(x,y_calc(8),'font-weight="bold"',(child.get('tipo')))
+        coordenadaValores = text(x,y_calc(9),'', (child.get('latitud') + " / " + child.get('longitud') + " / " + child.get('altitud')))
     svg_file.write(coordenadaTipo)
     svg_file.write(coordenadaValores)
 
-def addFotografiaToSVG(child, svg_file, x, y):
+def addFotografiaToSVG(child, svg_file, x, y, iteration):
     y_calc = lambda x: y + x * FONT_SIZE + 1
-    url = text(x,y_calc(8),'', ('Fotografia: ' + child.get('url')))
+    if iteration % 2 == 1:
+        url = text(x,y_calc(8),'', ('Fotografia: ' + child.get('url')))
+    else:
+        url = text(x,y_calc(10),'', ('Fotografia: ' + child.get('url')))
     svg_file.write(url)
     svg_file.write('</g>\n')
 
 
-def addPersonToSVG(child, svg_file, x, y):
+def addPersonToSVG(child, svg_file, x, y, iteration):
     for subchild in child:
         if subchild.tag == 'datos':
             addDatosToSVG(subchild, svg_file, x, y)
         elif subchild.tag == 'coordenada':
-            addCoordenadaToSVG(subchild, svg_file, x, y)
+            addCoordenadaToSVG(subchild, svg_file, x, y, iteration)
+            iteration+=1
         elif subchild.tag == 'fotografia':
-            addFotografiaToSVG(subchild, svg_file, x, y)
+            addFotografiaToSVG(subchild, svg_file, x, y, iteration)
 
-def getPersonaRecursivo(persona, svg_file, x, y, i=1):
+def getPersonaRecursivo(persona, svg_file, x, y, iteration, i=1):
     if len(persona.findall('persona')) > 0:
         yNueva = y + Y_INC
-        getPersonaRecursivo(persona.findall('persona')[0], svg_file, x-HEIGHT/(3**i), yNueva, i+1)
-        getPersonaRecursivo(persona.findall('persona')[1], svg_file, x, yNueva, i+1)
-        getPersonaRecursivo(persona.findall('persona')[2], svg_file, x+HEIGHT/(3**i), yNueva, i+1)
-    addPersonToSVG(persona, svg_file, x, y)
+        getPersonaRecursivo(persona.findall('persona')[0], svg_file, x-HEIGHT/(3**i), yNueva, iteration, i+1)
+        getPersonaRecursivo(persona.findall('persona')[1], svg_file, x, yNueva, iteration, i+1)
+        getPersonaRecursivo(persona.findall('persona')[2], svg_file, x+HEIGHT/(3**i), yNueva, iteration, i+1)
+    addPersonToSVG(persona, svg_file, x, y, iteration)
     
                 
 
-def getAllPersonas(root, svg_file):
+def getAllPersonas(root, svg_file, iteration):
     personaPrincipal = root.find('persona')
-    addPersonToSVG(personaPrincipal, svg_file, WIDTH/2, FONT_SIZE)
-    getPersonaRecursivo(personaPrincipal, svg_file, WIDTH/2, FONT_SIZE)
+    addPersonToSVG(personaPrincipal, svg_file, WIDTH/2, FONT_SIZE, iteration)
+    getPersonaRecursivo(personaPrincipal, svg_file, WIDTH/2, FONT_SIZE, iteration)
 
 def createSVG(svg_file):
     svgHeader = '''<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -93,14 +101,14 @@ def closeSVG(svg_file):
 
     svg_file.write(svgFooter % FONT_SIZE)
 
-def toHtml(xml_file, svg_file):
+def toHtml(xml_file, svg_file, iteration=0):
     try:
         with open(xml_file, 'rb') as xml_file:
             tree = ET.parse(xml_file)
         root = tree.getroot()
         svg_file = open(svg_file, 'w')
         createSVG(svg_file)
-        getAllPersonas(root, svg_file)
+        getAllPersonas(root, svg_file, iteration)
         closeSVG(svg_file)
 
     except IOError:
