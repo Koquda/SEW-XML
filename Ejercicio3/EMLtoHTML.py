@@ -5,8 +5,8 @@ li = lambda string: '\n\t\t<li>%s</li>' % (string)
 def getAdditionalMetadataRec(child, string):
     for subchild in child:
         if subchild is not None:
-            getAdditionalMetadataRec(subchild, string)
-        string += li(subchild.tag + " " + subchild.text)
+            string = getAdditionalMetadataRec(subchild, string)
+        string += li(subchild.tag + ": " + subchild.text)
     return string
 
 def getAdditionalMetadata(root):
@@ -21,8 +21,8 @@ def getAdditionalMetadata(root):
 def getDatasetRec(child, string):
     for subchild in child:
         if subchild is not None:
-            getDatasetRec(subchild, string)
-        string += li(subchild.tag + " " + subchild.text)
+            string = getDatasetRec(subchild, string)
+        string += li(subchild.tag + ": " + subchild.text)
     return string
 
 def getDataset(root):
