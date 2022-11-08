@@ -16,47 +16,47 @@
 			 <coordenada tipo="residencia"
 						 longitud="43.5606906693661"
 						 latitud="-5.926943764909175"
-						 altitud="">
+						 altitud="78">
 			 </coordenada>
-			 <fotografia url=""></fotografia>
+			 <fotografia url="media/doncic.jpg"></fotografia>
 
 			<persona> 
 				<datos nombre="Pedro" 
 					apellidos="Martínez Gómez"
-					fechaNacimiento="2001-1-04" 
+					fechaNacimiento="1993-1-04" 
 					lugarNacimiento="Oviedo"  
-					residencia="Oviedo"
+					residencia="Muros de Nalón"
 					comentarios="un amigo"></datos>
 				<coordenada tipo="nacimiento"
-							longitud="43.55178850537288"
-							latitud="-5.935726041191507"
-							altitud="">
+							longitud="43.36530435520826"
+							latitud="-5.852950312193624"
+							altitud="140">
 				</coordenada>
 				<coordenada tipo="residencia"
-							longitud="43.5606906693661"
-							latitud="-5.926943764909175"
-							altitud="">
+							longitud="43.54335280"
+							latitud="-6.10696915"
+							altitud="75">
 				</coordenada>
-				<fotografia url=""></fotografia>
+				<fotografia url="media/crisPaul.jpg"></fotografia>
 
 				<persona> 
 					<datos nombre="Aaron" 
 					apellidos="Orozco" 
 					fechaNacimiento="2002-6-22" 
-					lugarNacimiento="Llanera"  
-					residencia="Oviedo"
+					lugarNacimiento="Lugo de Llanera"  
+					residencia="Vigo"
 					comentarios="otro amigo"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="43.4424207"
+								latitud="-5.8199378"
+								altitud="43">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="42.2317970"
+								latitud="-8.7202722"
+								altitud="21">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/curry.jpg"></fotografia>
 			 
 				</persona>
 
@@ -64,20 +64,20 @@
 					<datos nombre="Fernando" 
 					apellidos="Arias Martínez" 
 					fechaNacimiento="2003-3-12" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
+					lugarNacimiento="Valencia"  
+					residencia="Valencia"
 					comentarios="se llama Fernando"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="39.4003358"
+								latitud="-0.4459689"
+								altitud="31">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="39.4003358"
+								latitud="-0.4459689"
+								altitud="31">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/durant.jpg"></fotografia>
 			 
 				</persona>
 
@@ -85,189 +85,189 @@
 					<datos nombre="Román" 
 					apellidos="Alonso Pérez" 
 					fechaNacimiento="1999-12-12" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
+					lugarNacimiento="Murcia"  
+					residencia="Murcia"
 					comentarios="juega a fútbol"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="37.976466"
+								latitud="-1.14228300"
+								altitud="132">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="37.976466"
+								latitud="-1.14228300"
+								altitud="132">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/giannis.jpg"></fotografia>
 			 
 				</persona>
 			 
 			</persona>
 
 			<persona> 
-				<datos nombre="Alejandro" 
-				apellidos="Campa Martínez" 
-				fechaNacimiento="2002-11-04" 
-				lugarNacimiento="Avilés"  
-				residencia="Avilés"
-				comentarios="Este soy yo"></datos>
+				<datos nombre="Pedro" 
+				apellidos="De Santiago Alonso" 
+				fechaNacimiento="2004-7-21" 
+				lugarNacimiento="Jaén"  
+				residencia="Jaén"
+				comentarios="Es de Jaén"></datos>
 				<coordenada tipo="nacimiento"
-							longitud="43.55178850537288"
-							latitud="-5.935726041191507"
-							altitud="">
+							longitud="37.7794818"
+							latitud="-3.80167170"
+							altitud="217">
 				</coordenada>
 				<coordenada tipo="residencia"
-							longitud="43.5606906693661"
-							latitud="-5.926943764909175"
-							altitud="">
+							longitud="37.7794818"
+							latitud="-3.80167170"
+							altitud="217">
 				</coordenada>
-				<fotografia url=""></fotografia>
+				<fotografia url="media/harden.jpg"></fotografia>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					<datos nombre="Alberto" 
+					apellidos="Romero Ibáñez" 
+					fechaNacimiento="1999-1-05" 
+					lugarNacimiento="Barcelona"
+					residencia="Barcelona"
+					comentarios="Le gusta la natación"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="41.3708779"
+								latitud="2.118513"
+								altitud="15">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="41.3708779"
+								latitud="2.118513"
+								altitud="15">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/irving.jpg"></fotografia>
 			 
 				</persona>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					<datos nombre="Emma" 
+					apellidos="Salinas Durán" 
+					fechaNacimiento="2003-11-04" 
+					lugarNacimiento="Madrid"  
+					residencia="Madrid"
+					comentarios="Veranea en un pueblo"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="40.40065933"
+								latitud="-3.66520065"
+								altitud="243">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="40.40065933"
+								latitud="-3.66520065"
+								altitud="243">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/jokic.jpg"></fotografia>
 			 
 				</persona>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					<datos nombre="Rosa" 
+					apellidos="Santiago Martínez" 
+					fechaNacimiento="1997-10-14" 
+					lugarNacimiento="León"  
+					residencia="León"
+					comentarios="Es autónomo"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="42.6060667"
+								latitud="-5.5767897"
+								altitud="146">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="42.6060667"
+								latitud="-5.5767897"
+								altitud="146">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/klay.jpg"></fotografia>
 			 
 				</persona>
 			 
 			</persona>
 
 			<persona> 
-				<datos nombre="Alejandro" 
-				apellidos="Campa Martínez" 
-				fechaNacimiento="2002-11-04" 
-				lugarNacimiento="Avilés"  
-				residencia="Avilés"
-				comentarios="Este soy yo"></datos>
+				<datos nombre="Susana" 
+				apellidos="Bustos Pérez" 
+				fechaNacimiento="2001-09-24" 
+				lugarNacimiento="Salamanca"  
+				residencia="Salamanca"
+				comentarios="Se mudó hace poco"></datos>
 				<coordenada tipo="nacimiento"
-							longitud="43.55178850537288"
-							latitud="-5.935726041191507"
-							altitud="">
+							longitud="40.96453857"
+							latitud="-5.67676513"
+							altitud="133">
 				</coordenada>
 				<coordenada tipo="residencia"
-							longitud="43.5606906693661"
-							latitud="-5.926943764909175"
-							altitud="">
+							longitud="40.96453857"
+							latitud="-5.67676513"
+							altitud="133">
 				</coordenada>
-				<fotografia url=""></fotografia>
+				<fotografia url="media/lebron.jpg"></fotografia>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
+					<datos nombre="María" 
+					apellidos="García García" 
+					fechaNacimiento="1999-09-12" 
+					lugarNacimiento="Valladolid"  
 					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					comentarios="Le gusta esquiar"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="41.6436442"
+								latitud="-4.7183016"
+								altitud="178">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="41.6436442"
+								latitud="-4.7183016"
+								altitud="178">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/lillard.jpg"></fotografia>
 
 			 
 				</persona>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					<datos nombre="Francisco" 
+					apellidos="Crespo Pérez" 
+					fechaNacimiento="2000-04-04" 
+					lugarNacimiento="Ferrol"  
+					residencia="Ferrol"
+					comentarios="Estudia moda"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="43.4911999"
+								latitud="-8.2126856"
+								altitud="12">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="43.4911999"
+								latitud="-8.2126856"
+								altitud="12">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/westbrook.jpg"></fotografia>
 			 
 				</persona>
 
 				<persona> 
-					<datos nombre="Alejandro" 
-					apellidos="Campa Martínez" 
-					fechaNacimiento="2002-11-04" 
-					lugarNacimiento="Avilés"  
-					residencia="Avilés"
-					comentarios="Este soy yo"></datos>
+					<datos nombre="Luis" 
+					apellidos="Sanchez Sala" 
+					fechaNacimiento="2001-02-24" 
+					lugarNacimiento="Ferrol"  
+					residencia="Ferrol"
+					comentarios="Comparte piso con Francisco"></datos>
 					<coordenada tipo="nacimiento"
-								longitud="43.55178850537288"
-								latitud="-5.935726041191507"
-								altitud="">
+								longitud="43.4911999"
+								latitud="-8.2126856"
+								altitud="12">
 					</coordenada>
 					<coordenada tipo="residencia"
-								longitud="43.5606906693661"
-								latitud="-5.926943764909175"
-								altitud="">
+								longitud="43.4911999"
+								latitud="-8.2126856"
+								altitud="12">
 					</coordenada>
-					<fotografia url=""></fotografia>
+					<fotografia url="media/zion.jpg"></fotografia>
 			 
 				</persona>
 			 
